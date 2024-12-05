@@ -1,0 +1,116 @@
+.calculator {
+    width: 100%;
+    max-width: 800px;  /* Coincide con .App */
+    margin: 0 auto;
+    padding: 40px;  /* Más padding */
+    background: white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.07);
+    border-radius: 15px;
+    background: linear-gradient(to right, #ffffff 0%, #f1f2f3 100%);
+    position: relative;
+    z-index: 10;
+}
+
+.calculator h1 {
+    text-align: center;
+    color: #3993f9;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.calculator label {
+    display: block;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    z-index: 11;
+}
+
+.calculator input {
+    width: 96%;
+    padding: 20px;  /* Más padding en inputs */
+    margin-top: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 18px;  /* Texto más grande */
+    transition: all 0.3s ease;
+    outline: none;
+    position: relative;
+    z-index: 12;
+}
+
+.calculator input:focus {
+    border-color: #3993f9;
+    box-shadow: 0 0 10px rgba(57, 147, 249, 0.2);
+}
+
+.calculator button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3993f9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 11;  /* Asegura interactividad del botón */
+    overflow: hidden;
+}
+
+.calculator button:hover {
+    background-color: #2764c7;
+    transform: translateY(-3px);
+}
+
+/* Media Queries para responsividad */
+@media screen and (max-width: 600px) {
+    .calculator {
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .calculator h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .calculator input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .calculator button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .calculator {
+        padding: 15px;
+        margin: 0 5px;
+    }
+
+    .calculator h1 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .calculator label {
+        margin-bottom: 15px;
+    }
+
+    .calculator input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .calculator button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

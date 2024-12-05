@@ -1,0 +1,42 @@
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    width: 100%;
+    max-width: 600px;
+    padding: 0;
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .App {
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+}
